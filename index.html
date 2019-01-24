@@ -21,8 +21,11 @@
         }
 
         section{
-            min-height: 110%;
             padding: 10px;
+            min-height: 110%;
+        }
+        section:last-child{
+            min-height: 100%;
         }
         section h2{
             padding-top: 70px;
@@ -97,16 +100,41 @@
         <a name="history"></a>
         <h2>My History</h2>
 
-        <h3>Education</h3>
-        <p>
-            2009 - 2011 University of California: Berkeley - Bachelor - Architecture
-        </p>
+        <div style="display: grid; grid-template-columns: 100px auto; grid-row-gap: 20px; grid-column-gap: 10px;">
 
-        <h3>Work</h3>
-        <p>Dabblefox - Co-Founder</p>
-        <p>Dark - Entrepreneur in Residence</p>
-        <p>Steinberg - Job Captain</p>
-        <p>STV / VBN - CAD Technician/Designer/Programmer Analyst</p>
+            <div>2015-Present</div>
+            <div>
+                <div><a href="https://www.dabblefox.com" target="_blank">Dabblefox</a></div>
+                <div>Technical Co-Founder</div>
+            </div>
+
+            <div>2018</div>
+            <div>
+                <div><a href="https://darklang.com" target="_blank">Dark</a></div>
+                <div>Entrepreneur in Residence</div>
+            </div>
+
+            <div>2015-2018</div>
+            <div>
+                <div><a href="https://www.steinberghart.com" target="_blank">Steinbert Hart</a></div>
+                <div>Job Captain</div>
+            </div>
+
+            <div>2011-2015</div>
+            <div>
+                <div><a href="https://www.stvinc.com" target="_blank">STV / vbn</a></div>
+                <div>Programmer Analyst / CAD Technician / Junior Designer</div>
+            </div>
+
+
+            <div>2009-2011</div>
+            <div>
+                <div><a href="https://ced.berkeley.edu/" target="_blank">University of California: Berkeley</a></div>
+                <div>Bachelor of Arts: Architecture</div>
+            </div>
+
+
+        </div>
 
 
 
