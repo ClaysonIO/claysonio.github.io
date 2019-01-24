@@ -1,11 +1,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32.png" />
     <title>Daniel Clayson</title>
 
     <style type="text/css">
         body{
-            font-family: Arial;
+            font-family: Arial sans-serif;
+            padding: 0;
+            margin: 0;
         }
 
         a{
@@ -13,21 +16,40 @@
             color: darkblue;
         }
 
+        a:hover{
+            text-decoration: underline;
+        }
+
         section{
             min-height: 110%;
+            padding: 10px;
+        }
+        section h2{
+            padding-top: 70px;
         }
         hr{
             position: absolute;
             bottom: 10px
         }
+
+        .fixedMenu{
+            position: fixed !important;
+            background-color: white;
+            top: 0;
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            height: 40px;
+            box-sizing: padding-box;
+        }
     </style>
 
 </head>
 <body>
-<div style="display: flex; margin: auto; max-width: 1000px; flex-direction: column; padding: 10px; box-sizing: border-box; height: 100%">
-    <div style="min-height: 100%; display: flex; flex-direction: column">
+<div style="display: flex; margin: auto; max-width: 1000px; flex-direction: column; box-sizing: border-box; height: 100%">
+    <div style="min-height: 100%; display: flex; flex-direction: column;">
 
-        <div style="display: flex; margin: auto; max-width: 1000px; flex: auto; align-items: center; flex-wrap: wrap">
+        <div id="title" style="display: flex; margin: auto; max-width: 1000px; flex: auto; align-items: center; flex-wrap: wrap; padding: 10px;">
             <div style="flex: 1; font-size: 200%; text-align: right; margin-right: 10%; min-width: 300px">
                 <h1>Daniel<br>Clayson</h1>
             </div>
@@ -38,16 +60,14 @@
             </div>
 
         </div>
-
-        <hr/>
-        <div style="display: flex; bottom: 0; text-align: center; margin-bottom: 25px;">
-            <a href="#about" style="flex: 1">About</a>
-            <a href="#history" style="flex: 1">History</a>
-            <a href="#abilities" style="flex: 1">Abilities</a>
-            <a href="#problems" style="flex: 1">Projects</a>
-            <a href="#contact" style="flex: 1">Contact</a>
-            <!--<a href="#" onclick="creatPdf()" style="flex: 1">Resume PDF</a>-->
-        </div>
+    </div>
+    <div id="menu" style="position: absolute; bottom: 0; width: 100%; margin-left: auto; margin-right: auto; max-width: 1000px; display: flex; text-align: center; padding-bottom: 5px; margin-bottom: 20px; padding-top: 25px;">
+        <a href="#about" style="flex: 1">About</a>
+        <a href="#history" style="flex: 1">History</a>
+        <a href="#abilities" style="flex: 1">Abilities</a>
+        <a href="#problems" style="flex: 1">Projects</a>
+        <a href="#contact" style="flex: 1">Contact</a>
+        <a href="DanielClayson-Resume.pdf" target="_blank" style="flex: 1">Resume</a>
     </div>
 
     <section>
@@ -58,7 +78,6 @@
             I'm a full-stack web developer with a background in architectural design -- in both the building and software varieties. I've used web technologies, VR, AR, and more to build applications that improve the lives of everyone living and working inside of buildings. I'm now looking for new opportunities in software development that will allow me to solve interesting problems with a dedicated team.
         </p>
 
-        <hr/>
 
     </section>
 
@@ -77,7 +96,6 @@
         <p>Steinberg - Job Captain</p>
         <p>STV / VBN - CAD Technician/Designer/Programmer Analyst</p>
 
-        <hr/>
 
 
     </section>
@@ -134,7 +152,7 @@
 
             </div>
         </div>
-        <hr/>
+
 
 
     </section>
@@ -175,9 +193,24 @@
             <a href="https://www.linkedin.com/in/dclayson/">Linkedin</a>
         </p>
         <p>
+            <a href="https://github.com/ClaysonIO">Github</a>
+        </p>
+        <p>
             <a href="mailto:daniel@clayson.io">Email</a>
         </p>
     </section>
 </div>
 </body>
+
+<script type="application/javascript">
+  var offset = document.getElementById('menu').offsetTop -25;
+  window.addEventListener('scroll', function() {
+    if(window.scrollY > offset){
+      document.getElementById('menu').className = 'fixedMenu';
+    } else {
+      document.getElementById('menu').className = '';
+    }
+  })
+
+</script>
 </html>
