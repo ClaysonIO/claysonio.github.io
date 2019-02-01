@@ -53,6 +53,15 @@
             height: 40px;
             box-sizing: padding-box;
         }
+
+        .listGroup{
+
+        }
+        .listContainer{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-row-gap: 25px;
+        }
     </style>
 </head>
 <body>
@@ -143,8 +152,8 @@
     <section>
         <a name="abilities"></a>
         <h2>Abilities</h2>
-        <div style="display: flex; flex-wrap: wrap">
-            <div style="flex: 1">
+        <div class="listContainer">
+            <div class="listGroup">
 
                 <h3>Technologies</h3>
                 <ul>
@@ -160,7 +169,7 @@
                 </ul>
 
             </div>
-            <div style="flex: 1">
+            <div class="listGroup">
 
                 <h3>Tools</h3>
                 <ul>
@@ -179,10 +188,11 @@
                     <li>Oculus Rift</li>
                     <li>HTC Vive</li>
                     <li>Lulzbot Taz6</li>
+                    <li>Raspberry Pi</li>
                 </ul>
 
             </div>
-            <div style="flex: 1">
+            <div class="listGroup">
 
                 <h3>Languages</h3>
                 <ul>
@@ -191,12 +201,12 @@
                 </ul>
 
             </div>
-            <div style="flex: 1">
+            <div class="listGroup">
 
                 <h3>The Other Ones</h3>
                 <ul>
                     <li>Class A Skydiving License</li>
-                    <li>Spanish</li>
+                    <li>Eagle Scout</li>
                 </ul>
 
             </div>
@@ -210,28 +220,57 @@
         <a name="projects"></a>
         <h2>Projects</h2>
 
-        <h4>Dabblefox</h4>
-        <ul>
-            <li>DabbleCUSTODIAN</li>
-            <li>dabbleEDITOR</li>
-            <li>dabbleSPACE</li>
-            <li>dabbleQC</li>
-            <li>dabbleSHELF</li>
-            <li>dabbleMOBILE</li>
-        </ul>
+        <div class="listContainer">
 
-        <h4>Greenhouse</h4>
-        <ul>
-            <li>Greenhouse</li>
-            <li>HouseTemp</li>
-        </ul>
+            <div class="listGroup">
+                <h4><a href="https://www.dabblefox.com">Dabblefox</a></h4>
+                <ul>
+                    <li>dabbleCUSTODIAN</li>
+                    <li>dabbleEDITOR</li>
+                    <li>dabbleSPACE</li>
+                    <li>dabbleQC</li>
+                    <li>dabbleSHELF</li>
+                    <li>dabbleMOBILE</li>
+                </ul>
+            </div>
 
-        <h4>PermaJournal</h4>
-        <ul>
-            <li>Text-to-Book</li>
-        </ul>
+            <div class="listGroup">
+                <h4><a href="https://www.permajournal.com">PermaJournal</a></h4>
+                <ul>
+                    <li>Simplified Journaling</li>
+                </ul>
+            </div>
 
-        <h4>STV+</h4>
+            <div class="listGroup">
+                <h4>STV+</h4>
+                <ul>
+                    <li>Space Planning Utility</li>
+                    <li>Custodial Workloader</li>
+                </ul>
+            </div>
+
+            <div class="listGroup">
+                <h4>IoT</h4>
+                <ul>
+                    <li>Greenhouse</li>
+                    <li>HouseTemp Monitor</li>
+                    <li>Christmas in the Park</li>
+                </ul>
+            </div>
+
+            <div class="listGroup">
+                <h4>Game Jams / Hackathons</h4>
+                <ul>
+                    <li><a href="https://globalgamejam.org/2019/games/alien-homemaker">Alien Homemaker</a></li>
+                    <li><a href="https://globalgamejam.org/2017/games/totally-real-earthquake-simulator-2017">Totally Real Earthquake Simulator 2017</a></li>
+                    <li>DeccoVR</li>
+                    <li><a href="https://globalgamejam.org/2016/games/parasomnia">Parasomnia</a></li>
+                    <li><a href="https://globalgamejam.org/2014/games/blind-threesome">Blind Threesome</a></li>
+                    <li>Bombing Run</li>
+                    <li><a href="http://2013.globalgamejam.org/2013/virus-circuit">Virius Circuit</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section>
