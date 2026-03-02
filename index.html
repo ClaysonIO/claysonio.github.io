@@ -1,335 +1,257 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K3FWBJ8');</script>
-    <!-- End Google Tag Manager -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="images/favicon-32.png" />
-    <title>Daniel Clayson</title>
 
-    <style type="text/css">
-        body{
-            font-family: Arial, sans-serif;
-            padding: 0;
-            margin: 0;
-        }
-
-        a{
-            text-decoration: none;
-            color: darkblue;
-        }
-
-        a:hover{
-            text-decoration: underline;
-        }
-
-        section{
-            padding: 10px;
-            min-height: 110%;
-        }
-        section:last-child{
-            min-height: 100%;
-        }
-        section h2{
-            padding-top: 70px;
-        }
-        hr{
-            position: absolute;
-            bottom: 10px
-        }
-
-        .fixedMenu{
-            position: fixed !important;
-            background-color: white;
-            top: 0;
-            display: flex;
-            width: 100%;
-            max-width: 1000px;
-            height: 40px;
-            box-sizing: padding-box;
-        }
-
-        .listGroup{
-
-        }
-        .listContainer{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-row-gap: 25px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="images/favicon-32.png">
+  <title>Daniel Clayson</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3FWBJ8"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<div style="display: flex; margin: auto; max-width: 1000px; flex-direction: column; box-sizing: border-box; height: 100%">
-    <div style="min-height: 100%; display: flex; flex-direction: column;">
 
-        <div id="title" style="display: flex; margin: auto; max-width: 1000px; flex: auto; align-items: center; flex-wrap: wrap; padding: 10px;">
-            <div style="flex: 1; font-size: 200%; text-align: right; margin-right: 10%; min-width: 300px">
-                <h1>Daniel<br>Clayson</h1>
-            </div>
-            <div style="flex: 2">
-                <h1>I Solve Problems</h1>
-                <h2>Mostly with Code</h2>
-                <h3>Sometimes with a Hammer</h3>
-            </div>
+<input type="checkbox" id="theme-toggle" aria-label="Toggle dark/light mode">
 
+<nav>
+  <div class="nav-inner">
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#abilities">Abilities</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <label for="theme-toggle" class="theme-toggle-label" title="Toggle dark/light mode">
+      <span class="icon-dark">☽</span>
+      <span class="icon-light">☀</span>
+    </label>
+  </div>
+</nav>
+
+<header>
+  <h1>Daniel<br>Clayson</h1>
+  <div class="hero-tagline">
+    <span class="line-1">I Solve Problems</span>
+    <span class="line-2">Mostly with Code</span>
+    <span class="line-3">Sometimes with a Hammer</span>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a full-stack web developer with a background in architectural design — in both the building and software varieties. I've used web technologies, VR, AR, and more to build applications that improve the lives of everyone living and working inside of buildings.
+    </p>
+  </section>
+
+  <section id="history">
+    <h2>My History</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">2019 – Present</div>
+        <div class="timeline-content">
+          <div class="org"><a href="https://www.autodesk.com" target="_blank" rel="noopener">Autodesk</a></div>
+          <div class="role">Senior Technical Consultant</div>
         </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2015 – Present</div>
+        <div class="timeline-content">
+          <div class="org"><a href="https://www.dabblefox.com" target="_blank" rel="noopener">Dabblefox</a></div>
+          <div class="role">Technical Co-Founder</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2018</div>
+        <div class="timeline-content">
+          <div class="org"><a href="https://darklang.com" target="_blank" rel="noopener">Dark</a></div>
+          <div class="role">Entrepreneur in Residence</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2015 – 2018</div>
+        <div class="timeline-content">
+          <div class="org"><a href="https://www.steinberghart.com" target="_blank" rel="noopener">Steinberg Hart</a></div>
+          <div class="role">Job Captain</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2011 – 2015</div>
+        <div class="timeline-content">
+          <div class="org"><a href="https://www.stvinc.com" target="_blank" rel="noopener">STV / vbn</a></div>
+          <div class="role">Programmer Analyst / CAD Technician / Junior Designer</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2009 – 2011</div>
+        <div class="timeline-content">
+          <div class="org"><a href="https://ced.berkeley.edu/" target="_blank" rel="noopener">University of California, Berkeley</a></div>
+          <div class="role">Bachelor of Arts: Architecture</div>
+        </div>
+      </div>
+
     </div>
-    <div id="menu" style="position: absolute; bottom: 0; width: 100%; margin-left: auto; margin-right: auto; max-width: 1000px; display: flex; text-align: center; padding-bottom: 5px; margin-bottom: 20px; padding-top: 25px;">
-        <a href="#about" style="flex: 1">About</a>
-        <a href="#history" style="flex: 1">History</a>
-        <a href="#abilities" style="flex: 1">Abilities</a>
-        <a href="#projects" style="flex: 1">Projects</a>
-        <a href="#contact" style="flex: 1">Contact</a>
+  </section>
+
+  <section id="abilities">
+    <h2>Abilities</h2>
+    <div class="abilities-grid">
+
+      <div class="ability-card">
+        <h3>Technologies</h3>
+        <ul>
+          <li>Javascript</li>
+          <li>Meteor.js</li>
+          <li>Node.js</li>
+          <li>React.js</li>
+          <li>MongoDB</li>
+          <li>Python</li>
+          <li>HTML / CSS</li>
+          <li>AWS (DynamoDB, Lambda, S3…)</li>
+          <li>Azure (App Service, SQL, DevOps…)</li>
+          <li>C#</li>
+          <li>Autodesk Forge</li>
+          <li>Microsoft Flow</li>
+        </ul>
+      </div>
+
+      <div class="ability-card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Windows</li>
+          <li>Webstorm</li>
+          <li>Firefox / Chrome</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe XD</li>
+          <li>Balsamiq</li>
+          <li>BIM360</li>
+          <li>Revit / AutoCAD</li>
+          <li>3ds Max</li>
+          <li>Unity3D</li>
+          <li>Oculus Rift / HTC Vive</li>
+          <li>Lulzbot Taz6</li>
+          <li>Raspberry Pi</li>
+          <li>Microsoft Power BI</li>
+          <li>Microsoft Teams</li>
+        </ul>
+      </div>
+
+      <div class="ability-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>English</li>
+          <li>Spanish</li>
+        </ul>
+      </div>
+
+      <div class="ability-card">
+        <h3>The Other Ones</h3>
+        <ul>
+          <li>Class A Skydiving License</li>
+          <li>Eagle Scout</li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
-    <section>
-        <a name="about"></a>
-        <h2>About Me</h2>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
 
-        <p>
-            I'm a full-stack web developer with a background in architectural design -- in both the building and software varieties. I've used web technologies, VR, AR, and more to build applications that improve the lives of everyone living and working inside of buildings.
-        </p>
+      <div class="project-card">
+        <h4><a href="https://www.autodesk.com" target="_blank" rel="noopener">Autodesk</a></h4>
+        <ul>
+          <li>BIM360 Backup Utility</li>
+          <li>BIM 360 Data Aggregator</li>
+          <li>Microsoft Teams / BIM 360 Integration</li>
+        </ul>
+      </div>
 
+      <div class="project-card">
+        <h4><a href="https://www.dabblefox.com" target="_blank" rel="noopener">Dabblefox</a></h4>
+        <ul>
+          <li>dabbleCUSTODIAN</li>
+          <li>dabbleEDITOR</li>
+          <li>dabbleSPACE</li>
+          <li>dabbleQC</li>
+          <li>dabbleSHELF</li>
+          <li>dabbleMOBILE</li>
+        </ul>
+      </div>
 
-    </section>
+      <div class="project-card">
+        <h4><a href="https://www.permajournal.com" target="_blank" rel="noopener">PermaJournal</a></h4>
+        <ul>
+          <li>Simplified Journaling</li>
+        </ul>
+      </div>
 
-    <section>
-        <a name="history"></a>
-        <h2>My History</h2>
+      <div class="project-card">
+        <h4>STV+</h4>
+        <ul>
+          <li>Space Planning Utility</li>
+          <li>Custodial Workloader</li>
+        </ul>
+      </div>
 
-        <div style="display: grid; grid-template-columns: 100px auto; grid-row-gap: 20px; grid-column-gap: 10px;">
+      <div class="project-card">
+        <h4>IoT</h4>
+        <ul>
+          <li>Greenhouse</li>
+          <li>HouseTemp Monitor</li>
+          <li>Christmas in the Park</li>
+        </ul>
+      </div>
 
-            <div>2019-Present</div>
-            <div>
-                <div><a href="https://www.autodesk.com" target="_blank">Autodesk</a></div>
-                <div>Senior Technical Consultant</div>
-            </div>
+      <div class="project-card">
+        <h4>Open Source</h4>
+        <ul>
+          <li><a href="https://toggl.clayson.io" target="_blank" rel="noopener">Toggl Calendar</a></li>
+        </ul>
+      </div>
 
-            <div>2015-Present</div>
-            <div>
-                <div><a href="https://www.dabblefox.com" target="_blank">Dabblefox</a></div>
-                <div>Technical Co-Founder</div>
-            </div>
+      <div class="project-card">
+        <h4>Game Jams &amp; Hackathons</h4>
+        <ul>
+          <li><a href="https://globalgamejam.org/2019/games/alien-homemaker" target="_blank" rel="noopener">Alien Homemaker</a></li>
+          <li><a href="https://globalgamejam.org/2017/games/totally-real-earthquake-simulator-2017" target="_blank" rel="noopener">Totally Real Earthquake Simulator 2017</a></li>
+          <li>DeccoVR</li>
+          <li><a href="https://globalgamejam.org/2016/games/parasomnia" target="_blank" rel="noopener">Parasomnia</a></li>
+          <li><a href="https://globalgamejam.org/2014/games/blind-threesome" target="_blank" rel="noopener">Blind Threesome</a></li>
+          <li>Bombing Run</li>
+          <li><a href="http://2013.globalgamejam.org/2013/virus-circuit" target="_blank" rel="noopener">Virus Circuit</a></li>
+        </ul>
+      </div>
 
-            <div>2018</div>
-            <div>
-                <div><a href="https://darklang.com" target="_blank">Dark</a></div>
-                <div>Entrepreneur in Residence</div>
-            </div>
+    </div>
+  </section>
 
-            <div>2015-2018</div>
-            <div>
-                <div><a href="https://www.steinberghart.com" target="_blank">Steinbert Hart</a></div>
-                <div>Job Captain</div>
-            </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a class="contact-link" href="https://www.linkedin.com/in/dclayson/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="contact-link" href="https://github.com/ClaysonIO" target="_blank" rel="noopener">GitHub</a>
+      <a class="contact-link" href="mailto:daniel@clayson.io">Email</a>
+      <a class="contact-link" href="https://calendly.com/claysonio/30min" target="_blank" rel="noopener">Schedule a Call</a>
+    </div>
+  </section>
 
-            <div>2011-2015</div>
-            <div>
-                <div><a href="https://www.stvinc.com" target="_blank">STV / vbn</a></div>
-                <div>Programmer Analyst / CAD Technician / Junior Designer</div>
-            </div>
+</main>
 
+<footer>
+  <p>www.clayson.io</p>
+</footer>
 
-            <div>2009-2011</div>
-            <div>
-                <div><a href="https://ced.berkeley.edu/" target="_blank">University of California: Berkeley</a></div>
-                <div>Bachelor of Arts: Architecture</div>
-            </div>
-
-
-        </div>
-
-
-
-    </section>
-
-    <section>
-        <a name="abilities"></a>
-        <h2>Abilities</h2>
-        <div class="listContainer">
-            <div class="listGroup">
-
-                <h3>Technologies</h3>
-                <ul>
-                    <li>Javascript</li>
-                    <li>Meteor.js</li>
-                    <li>Node.js</li>
-                    <li>React.js</li>
-                    <li>MongoDB</li>
-                    <li>Python</li>
-                    <li>HTML / CSS</li>
-                    <li>AWS (DynamoDB, Lambda, s3, etc)</li>
-                    <li>Azure (App Service, SQL, Devops, etc)</li>
-                    <li>C#</li>
-                    <li>Autodesk Forge</li>
-                    <li>Microsoft Flow</li>
-                </ul>
-
-            </div>
-            <div class="listGroup">
-
-                <h3>Tools</h3>
-                <ul>
-                    <li>Windows</li>
-                    <li>Webstorm</li>
-                    <li>Firefox</li>
-                    <li>Chrome</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe XD</li>
-                    <li>Balsamiq</li>
-                    <li>BIM360</li>
-                    <li>Revit</li>
-                    <li>AutoCAD</li>
-                    <li>3ds Max</li>
-                    <li>Unity3D</li>
-                    <li>Oculus Rift</li>
-                    <li>HTC Vive</li>
-                    <li>Lulzbot Taz6</li>
-                    <li>Raspberry Pi</li>
-                    <li>Microsoft Power BI</li>
-                    <li>Microsoft Teams</li>
-                </ul>
-
-            </div>
-            <div class="listGroup">
-
-                <h3>Languages</h3>
-                <ul>
-                    <li>English</li>
-                    <li>Spanish</li>
-                </ul>
-
-            </div>
-            <div class="listGroup">
-
-                <h3>The Other Ones</h3>
-                <ul>
-                    <li>Class A Skydiving License</li>
-                    <li>Eagle Scout</li>
-                </ul>
-
-            </div>
-        </div>
-
-
-
-    </section>
-
-    <section>
-        <a name="projects"></a>
-        <h2>Projects</h2>
-
-        <div class="listContainer">
-
-            <div class="listGroup">
-                <h4><a href="https://www.autodesk.com">Autodesk</a></h4>
-                <ul>
-                    <li>BIM360 Backup Utility</li>
-                    <li>BIM 360 Data Aggregator</li>
-                    <li>Microsoft Teams / BIM 360 Integration</li>
-                </ul>
-            </div>
-
-            <div class="listGroup">
-                <h4><a href="https://www.dabblefox.com">Dabblefox</a></h4>
-                <ul>
-                    <li>dabbleCUSTODIAN</li>
-                    <li>dabbleEDITOR</li>
-                    <li>dabbleSPACE</li>
-                    <li>dabbleQC</li>
-                    <li>dabbleSHELF</li>
-                    <li>dabbleMOBILE</li>
-                </ul>
-            </div>
-
-            <div class="listGroup">
-                <h4><a href="https://www.permajournal.com">PermaJournal</a></h4>
-                <ul>
-                    <li>Simplified Journaling</li>
-                </ul>
-            </div>
-
-            <div class="listGroup">
-                <h4>STV+</h4>
-                <ul>
-                    <li>Space Planning Utility</li>
-                    <li>Custodial Workloader</li>
-                </ul>
-            </div>
-
-            <div class="listGroup">
-                <h4>IoT</h4>
-                <ul>
-                    <li>Greenhouse</li>
-                    <li>HouseTemp Monitor</li>
-                    <li>Christmas in the Park</li>
-                </ul>
-            </div>
-
-            <div class="listGroup">
-                <h4>Open Source</h4>
-                <ul>
-                    <li><a href="https://toggl.clayson.io">Toggl Calendar</a></li>
-                </ul>
-            </div>
-
-            <div class="listGroup">
-                <h4>Game Jams / Hackathons</h4>
-                <ul>
-                    <li><a href="https://globalgamejam.org/2019/games/alien-homemaker">Alien Homemaker</a></li>
-                    <li><a href="https://globalgamejam.org/2017/games/totally-real-earthquake-simulator-2017">Totally Real Earthquake Simulator 2017</a></li>
-                    <li>DeccoVR</li>
-                    <li><a href="https://globalgamejam.org/2016/games/parasomnia">Parasomnia</a></li>
-                    <li><a href="https://globalgamejam.org/2014/games/blind-threesome">Blind Threesome</a></li>
-                    <li>Bombing Run</li>
-                    <li><a href="http://2013.globalgamejam.org/2013/virus-circuit">Virus Circuit</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <a name="contact"></a>
-        <h2>Contact</h2>
-
-        <p>
-            <a href="https://www.linkedin.com/in/dclayson/">Linkedin</a>
-        </p>
-        <p>
-            <a href="https://github.com/ClaysonIO">Github</a>
-        </p>
-        <p>
-            <a href="mailto:daniel@clayson.io">Email</a>
-        </p>
-        <p>
-            <a href="https://calendly.com/claysonio/30min">Schedule a Call</a>
-        </p>
-    </section>
-</div>
-</body>
-
-<script type="application/javascript">
-  var offset = document.getElementById('menu').offsetTop -25;
-  window.addEventListener('scroll', function() {
-    if(window.scrollY > offset){
-      document.getElementById('menu').className = 'fixedMenu';
-    } else {
-      document.getElementById('menu').className = '';
-    }
-  })
-
-</script>
 <script async src="https://analytics.clayson.io/tracker.js" data-ackee-server="https://analytics.clayson.io" data-ackee-domain-id="8b046da0-091e-4138-bcbc-36abd3d1a3f5"></script>
+</body>
 </html>
