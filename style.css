@@ -349,15 +349,15 @@ section h2::after {
 }
 
 /* ============================================================
-   Section: Abilities — Cards grid
+   Section: preferences — Cards grid
    ============================================================ */
-.abilities-grid {
+.preferences-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
 }
 
-.ability-card {
+.preference-card {
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -366,7 +366,7 @@ section h2::after {
   transition: var(--transition);
 }
 
-.ability-card h3 {
+.preference-card h3 {
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -375,11 +375,11 @@ section h2::after {
   margin-bottom: 0.75rem;
 }
 
-.ability-card ul li::before {
+.preference-card ul li::before {
   display: none;
 }
 
-.ability-card ul li {
+.preference-card ul li {
   font-size: 0.88rem;
   padding: 0.1rem 0;
 }
@@ -491,7 +491,7 @@ footer {
     gap: 0.2rem;
   }
 
-  .abilities-grid,
+  .preferences-grid,
   .projects-grid {
     grid-template-columns: 1fr;
   }
